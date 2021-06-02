@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class GroceryStoreBusiness {													//Part 1.2 User-defined class named GroceryStoreBusiness //Super class
-	private String product, location;												//Variables are privatized to prevent the variables to be access from other class
-	private int phoneno;
+	private String product, location,phoneno;												//Variables are privatized to prevent the variables to be access from other class
 	
 	Scanner scan = new Scanner(System.in);											//Part 1.2 Java pre-defined class of Scanner
 	
@@ -12,7 +11,7 @@ public class GroceryStoreBusiness {													//Part 1.2 User-defined class na
 		System.out.print("Please enter the location of grocery store: ");
 		location = scan.nextLine();
 		System.out.print("Please enter the phone no of grocery store: ");
-		phoneno = scan.nextInt();
+		phoneno = scan.nextLine();
 		printDetails(product, location, phoneno);
 	}
 	
@@ -21,7 +20,7 @@ public class GroceryStoreBusiness {													//Part 1.2 User-defined class na
 		System.out.print("Please enter the location of grocery store: ");
 		location = scan.nextLine();
 		System.out.print("Please enter the phone no of grocery store: ");
-		phoneno = scan.nextInt();
+		phoneno = scan.nextLine();
 		printDetails(product, location, phoneno);
 	}
 	
@@ -29,11 +28,11 @@ public class GroceryStoreBusiness {													//Part 1.2 User-defined class na
 		System.out.println("Product sold: " + product);
 		System.out.println("Location: " + location);
 		System.out.print("Please enter the phone no of grocery store: ");
-		phoneno = scan.nextInt();
+		phoneno = scan.nextLine();
 		printDetails(product, location, phoneno);
 	}
 	
-	public void printDetails(String product, String location, int phoneno) {						//Part 1.3 Method for user-defined class for printing out details of grocery store
+	public void printDetails(String product, String location, String phoneno) {						//Part 1.3 Method for user-defined class for printing out details of grocery store
 		System.out.println();
 		System.out.println("Grocery Store Details");
 		System.out.println("Products Sold: " + product);
